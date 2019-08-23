@@ -1,2 +1,2 @@
 # LGLMG
-LGLMF: Local Geographical based LogisticMatrix Factorization Model for POIRecommendation
+LGLMF: Local Geographical based Logistic Matrix Factorization Model for POI Recommendation
