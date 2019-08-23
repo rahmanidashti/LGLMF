@@ -1,2 +1,2 @@
-# LMFLBC
-Locality-Based Check-ins Point-of-Interest Recommendation
+# LGLMG
+LGLMF: Local Geographical based LogisticMatrix Factorization Model for POIRecommendation
