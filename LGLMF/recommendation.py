@@ -132,7 +132,7 @@ def main():
 
 
 if __name__ == '__main__':
-    data_dir = "../gowalla_u5628/"
+    data_dir = "../datasets/gowalla/"
 
     size_file = data_dir + "Gowalla_data_size.txt"
     check_in_file = data_dir + "Gowalla_checkins.txt"
