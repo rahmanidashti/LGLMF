@@ -5,6 +5,11 @@ LGLMF: Local Geographical based Logistic Matrix Factorization Model for POI Reco
 - Python version:  '3.7'
 - You have to install the required libraries
 
+## To run the code
+You need just run the `recommendation.py`
+
+- To change the dataset, you have to write its name in the `recommendation.py`.
+
 ## Cite
 Please cite our paper if you use our datasets or implementations:
 
