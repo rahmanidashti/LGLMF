@@ -1,6 +1,10 @@
 # LGLMG
 LGLMF: Local Geographical based Logistic Matrix Factorization Model for POI Recommendation (AIRS 2019)
 
+## Environment Settings
+- Python version:  '3.7'
+- You have to install the required libraries
+
 ## Cite
 Please cite our paper if you use our datasets or implementations:
 
