@@ -18,3 +18,6 @@ Hossein A. Rahmani, Mohammad Aliannejadi, Sajad Ahmadian, Mitra Baratchi, Mohsen
 ```
 
 This repository contains the implementation of the Local Geographical based Logistic Matrix Factorization Model for POI Recommendation proposed in the AIRS 2019 paper. More details will be updated later.
+
+# Contact
+If you have any questions, do not hesitate to contact us by `srahmani@znu.ac.ir` or `rahmanidashti@gmail.com`, we will be happy to assist.
