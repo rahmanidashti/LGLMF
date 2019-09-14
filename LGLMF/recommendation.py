@@ -12,27 +12,11 @@ from lib.metrics import precisionk, recallk, ndcgk, mapk
 def read_training_data():
     train_data = open(train_file, 'r').readlines()
     training_tuples = set()
-    visited_lids = defaultdict(set)
     for eachline in train_data:
         uid, lid, _ = eachline.strip().split()
         uid, lid, = int(uid), int(lid)
         training_tuples.add((uid, lid))
-        visited_lids[uid].add(lid)
-
-    check_in_data = open(check_in_file, 'r').readlines()
-    training_tuples_with_time = defaultdict(int)
-    for eachline in check_in_data:
-        uid, lid, ctime = eachline.strip().split()
-        uid, lid, ctime = int(uid), int(lid), float(ctime)
-        if (uid, lid) in training_tuples:
-            hour = time.gmtime(ctime).tm_hour
-            training_tuples_with_time[(hour, uid, lid)] += 1.0
-
-    # Default setting: time is partitioned to 24 hours.
-    sparse_training_matrices = [sparse.dok_matrix((user_num, poi_num)) for _ in range(24)]
-    for (hour, uid, lid), freq in training_tuples_with_time.items():
-        sparse_training_matrices[hour][uid, lid] = 1.0 / (1.0 + 1.0 / freq)
-    return sparse_training_matrices, training_tuples, visited_lids
+    return training_tuples
 
 
 def read_ground_truth():
@@ -46,7 +30,7 @@ def read_ground_truth():
 
 
 def main():
-    sparse_training_matrices, training_tuples, visited_lids = read_training_data()
+    training_tuples = read_training_data()
     ground_truth = read_ground_truth()
 
     start_time = time.time()
