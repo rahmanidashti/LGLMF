@@ -14,7 +14,15 @@ You need just run the `recommendation.py`
 Please cite our paper if you use our datasets or implementations:
 
 ```
-Hossein A. Rahmani, Mohammad Aliannejadi, Sajad Ahmadian, Mitra Baratchi, Mohsen Afsharchi, and Fabio Crestani. "LGLMF: Local Geographical based Logistic Matrix Factorization Model for POI Recommendation", Asia Information Retrieval Societies Conference (AIRS), Hong Kong, China, (2019)
+@inproceedings{rahmani2020lglmf,
+  title={LGLMF: Local Geographical Based Logistic Matrix Factorization Model for POI Recommendation},
+  author={Rahmani, Hossein A and Aliannejadi, Mohammad and Ahmadian, Sajad and Baratchi, Mitra and Afsharchi, Mohsen and Crestani, Fabio},
+  booktitle={Information Retrieval Technology: 15th Asia Information Retrieval Societies Conference, AIRS 2019, Hong Kong, China, November 7--9, 2019, Proceedings},
+  volume={12004},
+  pages={66},
+  year={2020},
+  organization={Springer Nature}
+}
 ```
 
 This repository contains the implementation of the Local Geographical based Logistic Matrix Factorization Model for POI Recommendation proposed in the AIRS 2019 paper. More details will be updated later.
